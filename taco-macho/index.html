@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Taco Macho Mazatlán — Tacos, Arrachera y Más</title>
+<meta name="description" content="Taco Macho en Mazatlán: tacos, vampiros, arrachera, ribeye y más. Av. Rafael Buelna 208, Lomas de Mazatlán. Ambiente familiar." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">🌮 Taco <span>Macho</span></a>
+    <nav>
+      <a href="#menu">Menú</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-primary" href="tel:+526699903099">Llamar</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <p class="kicker">Mazatlán · Desde la parrilla</p>
+    <h1>Tacos con<br/><span class="accent">sabor macho.</span></h1>
+    <p class="lead">Tortillas hechas a mano, carne a la parrilla, salsas tradicionales y un ambiente familiar a un costado del malecón.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-primary btn-lg">Ver el menú</a>
+      <a href="#contacto" class="btn btn-ghost btn-lg">Cómo llegar</a>
+    </div>
+    <ul class="hero-meta">
+      <li>🕕 Abierto hoy desde las 6 PM</li>
+      <li>📍 Lomas de Mazatlán</li>
+      <li>💵 Solo efectivo</li>
+    </ul>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="container strip-grid">
+    <div><strong>🅿️</strong><span>Estacionamiento gratis en la calle</span></div>
+    <div><strong>♿</strong><span>Acceso para sillas de ruedas</span></div>
+    <div><strong>🧒</strong><span>Zona de juegos para niños</span></div>
+    <div><strong>🛵</strong><span>Para llevar y a domicilio</span></div>
+  </div>
+</section>
+
+<section id="menu" class="section">
+  <div class="container">
+    <header class="section-head">
+      <p class="kicker">Carta</p>
+      <h2>Nuestro menú</h2>
+      <p class="muted">Precios en pesos mexicanos (MXN).</p>
+    </header>
+
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="tacos">Tacos</button>
+      <button class="tab" data-tab="fuertes">Platillos fuertes</button>
+      <button class="tab" data-tab="acomp">Acompañamientos</button>
+      <button class="tab" data-tab="bebidas">Bebidas</button>
+    </div>
+
+    <div class="tab-panel active" id="tacos">
+      <ul class="menu-list">
+        <li><div><h3>Taco Macho</h3><p>Queso, carne y rajas de chile.</p></div><span>$64 / $70</span></li>
+        <li><div><h3>Vampiro</h3><p>Tortilla tostada con queso y carne.</p></div><span>$66 / $72</span></li>
+        <li><div><h3>Chorreada</h3><p>Gordita de maíz con chicharrón, queso y carne.</p></div><span>$66 / $72</span></li>
+        <li><div><h3>Taco de Arrachera</h3></div><span>$46</span></li>
+        <li><div><h3>Taco de Costilla</h3></div><span>$59</span></li>
+        <li><div><h3>Taco de Adobada</h3></div><span>$39</span></li>
+      </ul>
+    </div>
+
+    <div class="tab-panel" id="fuertes">
+      <ul class="menu-list">
+        <li><div><h3>Carne Asada</h3><p>Sirloin 300 gr.</p></div><span>$175</span></li>
+        <li><div><h3>Arrachera</h3><p>300 gr.</p></div><span>$215</span></li>
+        <li><div><h3>Ribeye</h3><p>350 gr.</p></div><span>$270</span></li>
+        <li><div><h3>Costillita BBQ</h3><p>850 gr.</p></div><span>$195</span></li>
+        <li><div><h3>Alambre de Arrachera</h3></div><span>$165 / $180</span></li>
+        <li><div><h3>Papa Especial</h3></div><span>$149 / $164</span></li>
+      </ul>
+    </div>
+
+    <div class="tab-panel" id="acomp">
+      <ul class="menu-list">
+        <li><div><h3>Frijoles Charros</h3></div><span>$22</span></li>
+        <li><div><h3>Frijoles Especiales</h3><p>Con carne y queso.</p></div><span>$37</span></li>
+        <li><div><h3>Queso Fundido</h3></div><span>$155</span></li>
+        <li><div><h3>Guacamole</h3></div><span>$65</span></li>
+      </ul>
+    </div>
+
+    <div class="tab-panel" id="bebidas">
+      <ul class="menu-list">
+        <li><div><h3>Agua Fresca</h3></div><span>$30</span></li>
+        <li><div><h3>Refresco de Lata</h3></div><span>$30</span></li>
+        <li><div><h3>Cervezas</h3><p>Pacifico, Corona, Modelo.</p></div><span>$35 – $45</span></li>
+        <li><div><h3>Vino de la Casa</h3></div><span>Copa $110 / Botella $345</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="horarios" class="section section-dark">
+  <div class="container two-col">
+    <div>
+      <p class="kicker">Horarios</p>
+      <h2>Te esperamos toda la noche</h2>
+      <ul class="hours">
+        <li><span>Lunes – Jueves</span><span>6:00 PM – 1:00 AM</span></li>
+        <li><span>Viernes y Domingo</span><span>6:00 PM – 4:00 AM</span></li>
+        <li><span>Sábado</span><span>5:00 PM – 4:00 AM</span></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Lo que dicen de nosotros</h3>
+      <p>“Las tortillas hechas a mano y los frijoles son lo mejor. Servicio amable y ambiente familiar.”</p>
+      <p class="muted small">Servicio rápido en general; en horas pico puede haber espera.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="section">
+  <div class="container two-col">
+    <div>
+      <p class="kicker">Visítanos</p>
+      <h2>Ubicación y contacto</h2>
+      <p class="lead">Av. Rafael Buelna Tenorio 208, Lomas de Mazatlán, 82110 Mazatlán, Sin.</p>
+      <ul class="contact-list">
+        <li>📞 <a href="tel:+526699903099">+52 669 990 3099</a></li>
+        <li>🌐 <a href="https://tacomacho.mx" target="_blank" rel="noopener">tacomacho.mx</a></li>
+        <li>💵 Solo efectivo</li>
+        <li>🅿️ Estacionamiento gratis en la calle</li>
+      </ul>
+      <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Taco+Macho+Mazatlan+Rafael+Buelna+208">Abrir en Google Maps</a>
+    </div>
+    <div class="map">
+      <iframe loading="lazy" src="https://www.google.com/maps?q=Av.%20Rafael%20Buelna%20Tenorio%20208%2C%20Lomas%20de%20Mazatl%C3%A1n&output=embed" title="Mapa Taco Macho"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Taco Macho · Mazatlán</span>
+    <span>Hecho con sabor 🌶️</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
