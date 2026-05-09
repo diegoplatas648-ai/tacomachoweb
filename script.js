@@ -1,5 +1,34 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Language switcher
+const languageSelector = document.getElementById('language-selector');
+const allElements = document.querySelectorAll('[data-lang-en]');
+
+function setLanguage(lang) {
+  localStorage.setItem('language', lang);
+  allElements.forEach(el => {
+    if (lang === 'en') {
+      el.textContent = el.dataset.langEn;
+    } else {
+      // Restore original content from HTML - we'll do this differently
+      // Store original on first load
+      if (!el.dataset.original) {
+        el.dataset.original = el.textContent;
+      }
+      el.textContent = el.dataset.original;
+    }
+  });
+}
+
+// Load saved language or default to Spanish
+const savedLanguage = localStorage.getItem('language') || 'es';
+languageSelector.value = savedLanguage;
+setLanguage(savedLanguage);
+
+languageSelector.addEventListener('change', (e) => {
+  setLanguage(e.target.value);
+});
+
 const tabs = document.querySelectorAll('.tab');
 const panels = document.querySelectorAll('.tab-panel');
 tabs.forEach(t => {

@@ -31,7 +31,10 @@ a{color:inherit;text-decoration:none}
 .nav nav{display:flex;gap:28px}
 .nav nav a{font-size:14px;font-weight:600;color:var(--muted);transition:color .2s}
 .nav nav a:hover{color:var(--accent-2)}
-@media (max-width:720px){.nav nav{display:none}}
+.language-selector{background:transparent;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:6px;font-size:13px;cursor:pointer;transition:all .2s;font-weight:600}
+.language-selector:hover{border-color:var(--accent-2);color:var(--accent-2)}
+.language-selector option{background:var(--bg);color:var(--text)}
+@media (max-width:720px){.nav nav{display:none};.language-selector{padding:6px 10px;font-size:12px}}
 
 /* BUTTONS */
 .btn{display:inline-flex;align-items:center;justify-content:center;
@@ -96,6 +99,7 @@ a{color:inherit;text-decoration:none}
   padding:18px 0;border-bottom:1px dashed var(--line)}
 .menu-list h3{font-size:17px;font-weight:700}
 .menu-list p{font-size:13px;color:var(--muted);margin-top:2px}
+.menu-list img{width:100%;height:180px;object-fit:cover;border-radius:8px;margin-top:12px}
 .menu-list span{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--accent-2);white-space:nowrap}
 @media (max-width:720px){.menu-list{grid-template-columns:1fr;gap:0}}
 

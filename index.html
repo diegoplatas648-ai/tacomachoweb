@@ -15,93 +15,150 @@
   <div class="container nav-inner">
     <a href="#" class="logo">🌮 Taco <span>Macho</span></a>
     <nav>
-      <a href="#menu">Menú</a>
-      <a href="#horarios">Horarios</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#menu" data-lang-en="Menu">Menú</a>
+      <a href="#horarios" data-lang-en="Hours">Horarios</a>
+      <a href="#contacto" data-lang-en="Contact">Contacto</a>
     </nav>
-    <a class="btn btn-primary" href="tel:+526699903099">Llamar</a>
+    <select id="language-selector" class="language-selector">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+    </select>
+    <a class="btn btn-primary" href="tel:+526699903099" data-lang-en="Call">Llamar</a>
   </div>
 </header>
 
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="container hero-content">
-    <p class="kicker">Mazatlán · Desde la parrilla</p>
-    <h1>Tacos con<br/><span class="accent">sabor macho.</span></h1>
-    <p class="lead">Tortillas hechas a mano, carne a la parrilla, salsas tradicionales y un ambiente familiar a un costado del malecón.</p>
+    <p class="kicker" data-lang-en="Mazatlán · From the Grill">Mazatlán · Desde la parrilla</p>
+    <h1><span data-lang-en="Tacos with">Tacos con</span><br/><span class="accent" data-lang-en="Manly Flavor.">sabor macho.</span></h1>
+    <p class="lead" data-lang-en="Handmade tortillas, grilled meat, traditional salsas and a family atmosphere next to the boardwalk.">Tortillas hechas a mano, carne a la parrilla, salsas tradicionales y un ambiente familiar a un costado del malecón.</p>
     <div class="hero-actions">
-      <a href="#menu" class="btn btn-primary btn-lg">Ver el menú</a>
-      <a href="#contacto" class="btn btn-ghost btn-lg">Cómo llegar</a>
+      <a href="#menu" class="btn btn-primary btn-lg" data-lang-en="View Menu">Ver el menú</a>
+      <a href="#contacto" class="btn btn-ghost btn-lg" data-lang-en="How to Get There">Cómo llegar</a>
     </div>
     <ul class="hero-meta">
-      <li>🕕 Abierto hoy desde las 6 PM</li>
-      <li>📍 Lomas de Mazatlán</li>
-      <li>💵 Solo efectivo</li>
+      <li data-lang-en="🕕 Open today from 6 PM">🕕 Abierto hoy desde las 6 PM</li>
+      <li data-lang-en="📍 Lomas de Mazatlán">📍 Lomas de Mazatlán</li>
+      <li data-lang-en="💵 Cash Only">💵 Solo efectivo</li>
     </ul>
   </div>
 </section>
 
 <section class="strip">
   <div class="container strip-grid">
-    <div><strong>🅿️</strong><span>Estacionamiento gratis en la calle</span></div>
-    <div><strong>♿</strong><span>Acceso para sillas de ruedas</span></div>
-    <div><strong>🧒</strong><span>Zona de juegos para niños</span></div>
-    <div><strong>🛵</strong><span>Para llevar y a domicilio</span></div>
+    <div><strong>🅿️</strong><span data-lang-en="Free street parking">Estacionamiento gratis en la calle</span></div>
+    <div><strong>♿</strong><span data-lang-en="Wheelchair accessible">Acceso para sillas de ruedas</span></div>
+    <div><strong>🧒</strong><span data-lang-en="Kids play area">Zona de juegos para niños</span></div>
+    <div><strong>🛵</strong><span data-lang-en="Takeout & Delivery">Para llevar y a domicilio</span></div>
   </div>
 </section>
 
 <section id="menu" class="section">
   <div class="container">
     <header class="section-head">
-      <p class="kicker">Carta</p>
-      <h2>Nuestro menú</h2>
-      <p class="muted">Precios en pesos mexicanos (MXN).</p>
+      <p class="kicker" data-lang-en="Menu">Carta</p>
+      <h2 data-lang-en="Our Menu">Nuestro menú</h2>
+      <p class="muted" data-lang-en="Prices in Mexican pesos (MXN).">Precios en pesos mexicanos (MXN).</p>
     </header>
 
     <div class="tabs" role="tablist">
-      <button class="tab active" data-tab="tacos">Tacos</button>
-      <button class="tab" data-tab="fuertes">Platillos fuertes</button>
-      <button class="tab" data-tab="acomp">Acompañamientos</button>
-      <button class="tab" data-tab="bebidas">Bebidas</button>
+      <button class="tab active" data-tab="empezar" data-lang-en="To Start">Pa' Empezar</button>
+      <button class="tab" data-tab="mano" data-lang-en="By Hand">Con la Mano</button>
+      <button class="tab" data-tab="dieta" data-lang-en="Diet">Pa' la Dieta</button>
+      <button class="tab" data-tab="cubiertos" data-lang-en="With Silverware">Con Cubiertos</button>
+      <button class="tab" data-tab="sed" data-lang-en="Beverages">Pa' la Sed</button>
+      <button class="tab" data-tab="cervezas" data-lang-en="Beer & Wine">Cervezas & Vino</button>
+      <button class="tab" data-tab="postres" data-lang-en="Desserts">Pa'l Huequito</button>
     </div>
 
-    <div class="tab-panel active" id="tacos">
+    <div class="tab-panel active" id="empezar">
       <ul class="menu-list">
-        <li><div><h3>Taco Macho</h3><p>Queso, carne y rajas de chile.</p></div><span>$64 / $70</span></li>
-        <li><div><h3>Vampiro</h3><p>Tortilla tostada con queso y carne.</p></div><span>$66 / $72</span></li>
-        <li><div><h3>Chorreada</h3><p>Gordita de maíz con chicharrón, queso y carne.</p></div><span>$66 / $72</span></li>
-        <li><div><h3>Taco de Arrachera</h3></div><span>$46</span></li>
-        <li><div><h3>Taco de Costilla</h3></div><span>$59</span></li>
-        <li><div><h3>Taco de Adobada</h3></div><span>$39</span></li>
+        <li><div><h3 data-lang-en="Charros Beans">Frijoles Charros</h3></div><span>$36</span></li>
+        <li><div><h3 data-lang-en="Special Beans">Frijoles Especiales</h3><p data-lang-en="With cheese and meat.">Con queso y carne.</p></div><span>$51</span></li>
+        <li><div><h3 data-lang-en="Corn Bites">Cebollitas</h3></div><span>$20 / $35</span></li>
+        <li><div><h3 data-lang-en="Melted Cheese">Queso Fundido</h3></div><span>$195</span></li>
+        <li><div><h3 data-lang-en="Cheese with Meat">Queso con Carne</h3></div><span>$230</span></li>
+        <li><div><h3 data-lang-en="Guacamole Order">Orden de Guacamole</h3></div><span>$90</span></li>
+        <li><div><h3 data-lang-en="Quesadilla">Quesadilla</h3></div><span>$45</span></li>
       </ul>
     </div>
 
-    <div class="tab-panel" id="fuertes">
+    <div class="tab-panel" id="mano">
       <ul class="menu-list">
-        <li><div><h3>Carne Asada</h3><p>Sirloin 300 gr.</p></div><span>$175</span></li>
-        <li><div><h3>Arrachera</h3><p>300 gr.</p></div><span>$215</span></li>
-        <li><div><h3>Ribeye</h3><p>350 gr.</p></div><span>$270</span></li>
-        <li><div><h3>Costillita BBQ</h3><p>850 gr.</p></div><span>$195</span></li>
-        <li><div><h3>Alambre de Arrachera</h3></div><span>$165 / $180</span></li>
-        <li><div><h3>Papa Especial</h3></div><span>$149 / $164</span></li>
+        <li><div><h3 data-lang-en="Sirloin Taco">Taco Sirloin</h3></div><span>$51</span></li>
+        <li><div><h3 data-lang-en="Tacotorro">Tacotorro</h3><p data-lang-en="Best arrachera.">Arrachera de la mejor.</p></div><span>$57</span></li>
+        <li><div><h3 data-lang-en="Chicken Taco">Taco Pollo</h3></div><span>$47</span></li>
+        <li><div><h3 data-lang-en="Tripe Taco">Taco Tripa</h3></div><span>$67</span></li>
+        <li><div><h3 data-lang-en="Ta'Colorao">Ta'Colorao</h3><p data-lang-en="Rich pork adobo.">Rica adobada de puerco.</p></div><span>$51</span></li>
+        <li><div><h3 data-lang-en="Rib Taco">Taco de Costilla</h3><p data-lang-en="Short rib - NEW">Short rib de res - NUEVO</p></div><span>$70</span></li>
+        <li><div><h3 data-lang-en="Ribeye Taco">Taco de Ribeye</h3><p data-lang-en="2 Pieces">2 Piezas</p></div><span>$180</span></li>
+        <li><div><h3 data-lang-en="Macho Taco">Taco Macho</h3><p data-lang-en="Cheese, meat and chile strips.">Queso, carne y rajas de chile</p></div><span>$76 / $81</span></li>
+        <li><div><h3 data-lang-en="Caramelo">Caramelo</h3><p data-lang-en="Cheese and meat.">Queso y carne.</p></div><span>$73 / $79</span></li>
+        <li><div><h3 data-lang-en="Vampire">Vampiro</h3><p data-lang-en="Toasted tortilla with cheese and meat.">Tortilla tostada con queso y carne.</p></div><span>$78 / $83</span></li>
+        <li><div><h3 data-lang-en="Chorreada">Chorreada</h3><p data-lang-en="Corn cake with chicharrón, cheese and meat.">Gordita de maíz, asiento de chicharrón, queso y carne</p></div><span>$78 / $83</span></li>
       </ul>
     </div>
 
-    <div class="tab-panel" id="acomp">
+    <div class="tab-panel" id="dieta">
       <ul class="menu-list">
-        <li><div><h3>Frijoles Charros</h3></div><span>$22</span></li>
-        <li><div><h3>Frijoles Especiales</h3><p>Con carne y queso.</p></div><span>$37</span></li>
-        <li><div><h3>Queso Fundido</h3></div><span>$155</span></li>
-        <li><div><h3>Guacamole</h3></div><span>$65</span></li>
+        <li><div><h3 data-lang-en="Light Taco">Taco Light</h3><p data-lang-en="No tortilla. Lettuce base.">Sin tortilla, Con base de lechuga</p></div><span>$54 / $60</span></li>
+        <li><div><h3 data-lang-en="Crispy Taco">Taco Encostrado</h3><p data-lang-en="Cheese base.">Con base de costra de queso.</p></div><span>$81 / $88</span></li>
+        <li><div><h3 data-lang-en="Macho Crispy">Macho Encostrado</h3><p data-lang-en="Cheese base with chile strips.">Con base de costra de queso y rajas de chile</p></div><span>$83 / $91</span></li>
+        <li><div><h3 data-lang-en="Salad">Ensalada</h3><p data-lang-en="Mix of lettuce with house dressing.">Mezcla de lechugas con aderezo de la casa</p></div><span>$140 / $160</span></li>
       </ul>
     </div>
 
-    <div class="tab-panel" id="bebidas">
+    <div class="tab-panel" id="cubiertos">
       <ul class="menu-list">
-        <li><div><h3>Agua Fresca</h3></div><span>$30</span></li>
-        <li><div><h3>Refresco de Lata</h3></div><span>$30</span></li>
-        <li><div><h3>Cervezas</h3><p>Pacifico, Corona, Modelo.</p></div><span>$35 – $45</span></li>
-        <li><div><h3>Vino de la Casa</h3></div><span>Copa $110 / Botella $345</span></li>
+        <li><div><h3 data-lang-en="Special Potato">Papa Especial</h3><p data-lang-en="With meat, cheese and bacon.">Con carne, queso y tocino</p></div><span>$195 / $210</span></li>
+        <li><div><h3 data-lang-en="Alambre">Alambre</h3><p data-lang-en="Meat, cheese, onion, pepper and bacon.">Carne, queso, cebolla, pimiento y tocino</p></div><span>$220 / $235</span></li>
+        <li><div><h3 data-lang-en="Grilled Meat">Carne Asada</h3><p data-lang-en="Sirloin 300g">Sirloin 300grs</p></div><span>$245</span></li>
+        <li><div><h3 data-lang-en="Arrachera">Arrachera</h3><p data-lang-en="The best 300g">La mejor 300grs</p></div><span>$285</span></li>
+        <li><div><h3 data-lang-en="Arracheese">Arraquechi</h3><p data-lang-en="Arrachera filled with cheese and poblano pepper 300g">Arrachera rellena de queso y chile poblano 300grs</p></div><span>$300</span></li>
+        <li><div><h3 data-lang-en="Tripe Order">Orden de Tripa</h3></div><span>$280</span></li>
+        <li><div><h3 data-lang-en="Rib Order">Orden de Costilla</h3><p data-lang-en="Short rib 300g">Short rib de res 300grs</p></div><span>$230</span></li>
+        <li><div><h3 data-lang-en="Grilled Chicken">Pechuga de Pollo</h3><p data-lang-en="On the grill">A la parrilla</p></div><span>$230</span></li>
+        <li><div><h3 data-lang-en="Rib Eye">Rib Eye</h3></div><span>$345</span></li>
+        <li><div><h3 data-lang-en="BBQ Ribs">Costillita BBQ</h3></div><span>$260</span></li>
+      </ul>
+    </div>
+
+    <div class="tab-panel" id="sed">
+      <ul class="menu-list">
+        <li><div><h3 data-lang-en="Fresh Drink">Agua Fresca</h3></div><span>$40</span></li>
+        <li><div><h3 data-lang-en="Soda">Refresco de Lata</h3></div><span>$40</span></li>
+        <li><div><h3 data-lang-en="Sparkling Water">Agua Embotellada</h3></div><span>$38</span></li>
+        <li><div><h3 data-lang-en="Iced Tea">Té Helado</h3></div><span>$40</span></li>
+        <li><div><h3 data-lang-en="Coffee">Café</h3></div><span>$30</span></li>
+      </ul>
+    </div>
+
+    <div class="tab-panel" id="cervezas">
+      <ul class="menu-list">
+        <li><div><h3>Pacífico</h3></div><span>$40</span></li>
+        <li><div><h3>Pacífico Light</h3></div><span>$40</span></li>
+        <li><div><h3>Pacífico Suave</h3></div><span>$45</span></li>
+        <li><div><h3>Corona</h3></div><span>$45</span></li>
+        <li><div><h3>Corona Light</h3></div><span>$45</span></li>
+        <li><div><h3>Modelo</h3></div><span>$50</span></li>
+        <li><div><h3>Negra Modelo</h3></div><span>$50</span></li>
+        <li><div><h3>Ultra</h3></div><span>$50</span></li>
+        <li><div><h3>Victoria</h3></div><span>$45</span></li>
+        <li><div><h3>Estella</h3></div><span>$60</span></li>
+        <li><div><h3 data-lang-en="Michelada Glass">Vaso Michelado</h3></div><span>$27</span></li>
+        <li><div><h3 data-lang-en="Salty Glass">Vaso Salseado</h3></div><span>$30</span></li>
+        <li><div><h3 data-lang-en="Clamato Glass">Vaso Clamato</h3></div><span>$35</span></li>
+        <li><div><h3 data-lang-en="Large Clamato">Clamato Grande</h3></div><span>$50</span></li>
+        <li><div><h3 data-lang-en="House Wine">Vino de la Casa</h3><p data-lang-en="Bottle / Glass">Botella / Copa</p></div><span>$345 / $110</span></li>
+        <li><div><h3 data-lang-en="Descorche">Descorche</h3></div><span>$150</span></li>
+      </ul>
+    </div>
+
+    <div class="tab-panel" id="postres">
+      <ul class="menu-list">
+        <li><div><h3 data-lang-en="Coyotes">Coyotas</h3><p data-lang-en="Sonora's traditional.">La tradicional de Sonora.</p></div><span>$33</span></li>
+        <li><div><h3 data-lang-en="Flan">Flán</h3></div><span>$75</span></li>
       </ul>
     </div>
   </div>
@@ -110,18 +167,18 @@
 <section id="horarios" class="section section-dark">
   <div class="container two-col">
     <div>
-      <p class="kicker">Horarios</p>
-      <h2>Te esperamos toda la noche</h2>
+      <p class="kicker" data-lang-en="Hours">Horarios</p>
+      <h2 data-lang-en="We're Open All Night">Te esperamos toda la noche</h2>
       <ul class="hours">
-        <li><span>Lunes – Jueves</span><span>6:00 PM – 1:00 AM</span></li>
-        <li><span>Viernes y Domingo</span><span>6:00 PM – 4:00 AM</span></li>
-        <li><span>Sábado</span><span>5:00 PM – 4:00 AM</span></li>
+        <li><span data-lang-en="Monday - Thursday">Lunes – Jueves</span><span>6:00 PM – 1:00 AM</span></li>
+        <li><span data-lang-en="Friday & Sunday">Viernes y Domingo</span><span>6:00 PM – 4:00 AM</span></li>
+        <li><span data-lang-en="Saturday">Sábado</span><span>5:00 PM – 4:00 AM</span></li>
       </ul>
     </div>
     <div class="card">
-      <h3>Lo que dicen de nosotros</h3>
-      <p>“Las tortillas hechas a mano y los frijoles son lo mejor. Servicio amable y ambiente familiar.”</p>
-      <p class="muted small">Servicio rápido en general; en horas pico puede haber espera.</p>
+      <h3 data-lang-en="What People Say">Lo que dicen de nosotros</h3>
+      <p data-lang-en="&quot;Handmade tortillas and beans are the best. Friendly service and family atmosphere.&quot;">"Las tortillas hechas a mano y los frijoles son lo mejor. Servicio amable y ambiente familiar."</p>
+      <p class="muted small" data-lang-en="Fast service in general; there may be wait during peak hours.">Servicio rápido en general; en horas pico puede haber espera.</p>
     </div>
   </div>
 </section>
@@ -129,16 +186,16 @@
 <section id="contacto" class="section">
   <div class="container two-col">
     <div>
-      <p class="kicker">Visítanos</p>
-      <h2>Ubicación y contacto</h2>
-      <p class="lead">Av. Rafael Buelna Tenorio 208, Lomas de Mazatlán, 82110 Mazatlán, Sin.</p>
+      <p class="kicker" data-lang-en="Visit Us">Visítanos</p>
+      <h2 data-lang-en="Location & Contact">Ubicación y contacto</h2>
+      <p class="lead" data-lang-en="Av. Rafael Buelna Tenorio 208, Lomas de Mazatlán, 82110 Mazatlán, Sin.">Av. Rafael Buelna Tenorio 208, Lomas de Mazatlán, 82110 Mazatlán, Sin.</p>
       <ul class="contact-list">
         <li>📞 <a href="tel:+526699903099">+52 669 990 3099</a></li>
         <li>🌐 <a href="https://tacomacho.mx" target="_blank" rel="noopener">tacomacho.mx</a></li>
-        <li>💵 Solo efectivo</li>
-        <li>🅿️ Estacionamiento gratis en la calle</li>
+        <li data-lang-en="Cash only">💵 Solo efectivo</li>
+        <li data-lang-en="Free street parking">🅿️ Estacionamiento gratis en la calle</li>
       </ul>
-      <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Taco+Macho+Mazatlan+Rafael+Buelna+208">Abrir en Google Maps</a>
+      <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Taco+Macho+Mazatlan+Rafael+Buelna+208" data-lang-en="Open in Google Maps">Abrir en Google Maps</a>
     </div>
     <div class="map">
       <iframe loading="lazy" src="https://www.google.com/maps?q=Av.%20Rafael%20Buelna%20Tenorio%20208%2C%20Lomas%20de%20Mazatl%C3%A1n&output=embed" title="Mapa Taco Macho"></iframe>
@@ -148,8 +205,8 @@
 
 <footer class="footer">
   <div class="container footer-inner">
-    <span>© <span id="year"></span> Taco Macho · Mazatlán</span>
-    <span>Hecho con sabor 🌶️</span>
+    <span data-lang-en="© [YEAR] Taco Macho · Mazatlán">© <span id="year"></span> Taco Macho · Mazatlán</span>
+    <span data-lang-en="Made with Flavor 🌶️">Hecho con sabor 🌶️</span>
   </div>
 </footer>
 
